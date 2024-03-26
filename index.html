@@ -118,13 +118,13 @@
 
     <h1 class="heading">Health-stats</h1>
     
-
-       <div class="container">
+      
+       <!-- <div class="container">
       <h2  style="font-family:poppins;background-color:orange;text-align:center;font-color:white;color:white;font-size: 3.5em; margin-top: 0.20em;">
       Some statistics  <span id="country"></span> </h2>
 
       <div class="board">
-        <div class="card a"><i class="fa fa-tachometer"></i><h5>Life Expectancy</h5><span id="life"></span></div>
+        <div class="card a"><i class="fa fa-tachometer"></i><h5>Life </h5><span id="life"></span></div>
         
         <div class="card cr"><i class="fa fa-times-circle"></i><h5>Population using safely sanittation</h5><span id="san"></span></div>
         <div class="card r"><i class="fa fa-check-square-o"></i><h5>Happiness Index</h5><span id="happyid"></span></div>
@@ -133,7 +133,78 @@
         <div class="card t"><i class="fa fa-inr"></i><h5>Health Budget</h5><span id="budget"></span></div>
         <div class="card ca"><i class="fa fa-th-list"></i><h5>Total Population</h5><span id="population"></span></div>
       </div>
-    </div>
+    </div> -->
+    <div class="container">
+        <h2 style="font-family:poppins;background-color:orange;text-align:center;font-color:white;color:white;font-size: 3.5em; margin-top: 0.20em;">
+          Some statistics <span id="country"></span>
+        </h2>
+    
+        <div class="board">
+          <div class="card a">
+            <i class="fa fa-tachometer"></i>
+            <h5>Life</h5>
+            <span id="life"></span>
+            <button class="graph-btn">Show Graph</button>
+          </div>
+    
+          <div class="card cr">
+            <i class="fa fa-times-circle"></i>
+            <h5>Population using safely sanittation</h5>
+            <span id="san"></span>
+            <button class="graph-btn">Show Graph</button>
+          </div>
+    
+          <div class="card r">
+            <i class="fa fa-check-square-o"></i>
+            <h5>Happiness Index</h5>
+            <span id="happyid"></span>
+            <button class="graph-btn">Show Graph</button>
+          </div>
+    
+          <div class="card d">
+            <i class="fa fa-times"></i>
+            <h5>Mortality Rate (per 1000)</h5>
+            <span id="mortality"></span>
+            <button class="graph-btn">Show Graph</button>
+          </div>
+    
+          <div class="card t">
+            <i class="fa fa-inr"></i>
+            <h5>Health Budget</h5>
+            <span id="budget"></span>
+            <button class="graph-btn">Show Graph</button>
+          </div>
+    
+          <div class="card ca">
+            <i class="fa fa-th-list"></i>
+            <h5>Total Population</h5>
+            <span id="population"></span>
+            <button class="graph-btn">Show Graph</button>
+          </div>
+        </div>
+      </div>
+    
+      <script>
+        // Function to generate a random value for the graph data (e.g., heartbeat)
+        function generateRandomValue() {
+          return Math.floor(Math.random() * 101); // Generates a random number between 0 and 100
+        }
+    
+        // Add event listeners to all buttons with class "graph-btn"
+        document.querySelectorAll('.graph-btn').forEach(button => {
+          button.addEventListener('click', function() {
+            // Get the parent container of the button
+            const parentCard = button.closest('.card');
+    
+            // Generate a random value for the graph data
+            const randomValue = generateRandomValue();
+    
+            // Here you would display the graph using the random value.
+            // For demonstration, let's simply log the random value.
+            console.log('Graph data:', randomValue);
+          });
+        });
+      </script>
 
    </section>
 
