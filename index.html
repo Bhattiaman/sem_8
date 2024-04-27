@@ -9,6 +9,7 @@
     <title>Self-help website design </title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/7081/7081376.png">
     
+    
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -27,24 +28,23 @@
     
 <!-- header section starts  -->
 
+
 <header>
-                                                            
-    <img width="100 px" height="100 px" src="images/sh2.png" alt="">
-     
-
-    <div id="menu" class="fas fa-bars"></div>
-
-    <nav class="navbar">
-        <a class="active" href="#home">home</a>
-        <a href="#tips" target="_blank">Tips</a>
-        <a href="#health-data">health-stats</a>
-        <a href="doctors.html" target="_blank">doctor</a>
-        <a href="selftest_index.html" target="_blank">Self-Test </a>
-        <a href="FAQs.html" target="_blank">FAQs </a>
-        <a href="Blogs.html" target="_blank">Blogs </a>
-    </nav>
-
+  <img width="100" height="100" src="images/sh2.png" alt="">
+  <div id="menu" class="fas fa-bars"></div>
+  <nav class="navbar">
+      <a class="active" href="#home">home</a>
+      <a href="#tips" target="_blank">Tips</a>
+      <a href="#health-data">health-stats</a>
+      <a href="doctors.html" target="_blank">doctor</a>
+      <a href="selftest_index.html" target="_blank">Self-Test</a>
+      <a href="FAQs.html" target="_blank">FAQs</a>
+      <input id="dark-mode-toggle" class="dark-mode-toggle toggle" type="checkbox">
+      <div class="background"></div>
+      <label class="title" for="dark-mode-toggle"></label>
+  </nav>
 </header>
+
 
 <!-- header section ends -->
 
@@ -337,19 +337,25 @@
 </a>
 
 
+<script>
+  // JavaScript for toggling dark mode
+  const darkModeToggle = document.getElementById('dark-mode-toggle');
+  const body = document.body;
 
+  darkModeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      darkModeToggle.classList.toggle('on'); // Add or remove 'on' class for animation
+      const darkModeEnabled = body.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', darkModeEnabled);
+  });
 
-
-
-
-
-
-
-
-
-
-
-
+  // Check local storage for dark mode preference
+  const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
+  if (darkModeEnabled) {
+      body.classList.add('dark-mode');
+      darkModeToggle.classList.add('on'); // Add 'on' class for initial animation state
+  }
+</script>
 
 <!-- jquery cdn link  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

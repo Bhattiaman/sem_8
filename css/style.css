@@ -21,6 +21,73 @@
     color:#fff;
 }
 
+/* CSS for dark mode */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* Background color for navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for navbar */
+}
+
+.navbar a {
+    color: #333; /* Default font color for navbar links */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #666; /* Font color for navbar links on hover */
+}
+
+.dark-mode-toggle {
+    --size: 2rem;
+    appearance: none;
+    outline: none;
+    margin-left: 9px;
+    cursor: pointer;
+    width: var(--size);
+    height: var(--size);
+    box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
+    border-radius: 999px;
+    background-color: #fff; /* Background color for dark mode button */
+    color: #ffc107; /* Font color for dark mode button */
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle.on {
+    transform: rotate(180deg);
+    color: #fff; /* Font color for dark mode button when toggled */
+    background-color: #333; /* Background color for dark mode button when toggled */
+}
+
+/* Add animation for navbar links */
+.navbar a {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.dark-mode a {
+    color: #fff;
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -550,4 +617,71 @@ header.sticky{
         width:100%;
     }
 
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff; /* Background color for navbar */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for navbar */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar.dark-mode {
+    background-color: #333; /* Background color for navbar in dark mode */
+}
+
+.navbar a {
+    color: #333; /* Default font color for navbar links */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease; /* Smooth transition for font color */
+}
+
+.navbar.dark-mode a {
+    color: #ccc; /* Font color for navbar links in dark mode */
+}
+
+.navbar a:hover {
+    color: #666; /* Font color for navbar links on hover */
+}
+
+.dark-mode-toggle {
+    --size: 2rem;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    width: var(--size);
+    height: var(--size);
+    box-shadow: inset calc(var(--size) * 0.33) calc(var(--size) * -0.25) 0;
+    border-radius: 999px;
+    background-color: #fff; /* Background color for dark mode button */
+    color: #ffc107; /* Font color for dark mode button */
+    transition: all 0.3s ease;
+}
+
+.dark-mode-toggle.on {
+    transform: rotate(180deg);
+    color: #fff; /* Font color for dark mode button when toggled */
+    background-color: #333; /* Background color for dark mode button when toggled */
+}
+
+/* Add animation for navbar links */
+.navbar a {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
