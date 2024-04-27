@@ -1,23 +1,37 @@
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forehead</title> 
-    <link rel = "icon" href="https://cdn-icons-png.flaticon.com/128/6600/6600305.png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/6600/6600305.png">
     <link rel="stylesheet" href="selftest_style.css">
     <!-- Google Fonts Link -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700;800&display=swap" rel="stylesheet"/>
     <!--Line Awesome CDN Link-->
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"/>
-    
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
-      
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="data_css.css" />
+    <style>
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .dark-mode .custom-radio input[type="radio"] + .radio-btn i.las {
+            color: #fff;
+        }
+
+        .dark-mode .custom-radio input[type="radio"] + .radio-btn h3 {
+            color: #fff;
+        }
+
+        /* Your existing CSS styles */
+    </style>
 </head>
   <body>
     <h1 style="font-family:poppins;background-color:#43a0e2;text-align:center;font-size: 3.2em; margin-top: 0.20em;font-color:white;color:white">Analyze your forehead</h1>
@@ -134,6 +148,57 @@
         //document.write(status);
         //document.getElementById("res").innerHTML = status;
         }
+
+</script>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> <!-- Alert Box Link -->
+<script>
+    // JavaScript for toggling dark mode
+    const darkModeToggle = document.createElement('input');
+    darkModeToggle.setAttribute('type', 'checkbox');
+    darkModeToggle.setAttribute('id', 'dark-mode-toggle');
+    darkModeToggle.classList.add('dark-mode-toggle', 'toggle');
+    document.body.insertBefore(darkModeToggle, document.body.firstChild);
+
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const darkModeEnabled = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', darkModeEnabled);
+    });
+
+    // Check local storage for dark mode preference
+    const darkModeEnabled = localStorage.getItem('darkMode') === 'true';
+    if (darkModeEnabled) {
+        document.body.classList.add('dark-mode');
+        darkModeToggle.checked = true;
+    }
+</script>
+<script type="text/javascript">
+
+    function result() {
+        window.location.href = "#sec-res";
+        var status= document.getElementById('res-n');
+        var resa= document.getElementById('res-a');
+        var resa2= document.getElementById('res-a2');
+        var resa3= document.getElementById('res-a3');
+        var resb= document.getElementById('res-b');
+
+        if(document.getElementById('q1a').checked == true)
+        {
+            resa.style.display = "block";
+            resa2.style.display = "block";
+            resa3.style.display = "block";
+        }
+
+        if(document.getElementById('q1b').checked == true)
+        {
+            resb.style.display = "block";
+        }
+        if(document.getElementById('q1c').checked == true)
+        {
+            resb.style.display = "block";
+        }
+    }
 
 </script>
 

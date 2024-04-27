@@ -22,7 +22,56 @@
 
     <!--Google Verification Tag-->
     <meta name="google-site-verification" content="b1R5RC7tyMHQSXMe5_620gW1nM6R3giwf41qrtZWcDE" />
-    
+    <style>
+      /* CSS for responsive navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  padding: 1rem;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+  }
+
+  .navbar a {
+    padding: 0.5rem;
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .navbar .active {
+    background-color: #ddd;
+  }
+
+  .navbar .fas {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  .navbar.active .fas.fa-bars {
+    display: none;
+  }
+
+  .navbar.active a {
+    display: block;
+  }
+}
+
+    </style>
 </head>
 <body>
     
