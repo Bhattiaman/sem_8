@@ -170,29 +170,15 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <div class="container" style="overflow-x: auto; white-space: nowrap;">
-      <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #87CEEB; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-        <h5 style="color: white;">Life</h5>
-        <span id="life"></span>
-        <button class="graph-btn" data-statistic="Life">Show Graph</button>
-        <canvas id="lifeChart" width="300" height="200"></canvas>
+      
+    
+     
+      <!-- Add other cards similarly --> <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #FF7F50; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h5 style="color: white;">Blood Pressure Monitor</h5>
+        <span id="blood"></span>
+        <button class="graph-btn" data-statistic="Blood Pressure">Show Graph</button>
+        <canvas id="bloodChart" width="300" height="200"></canvas>
       </div>
-    
-      <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #FF6347; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-        <h5 style="color: white;">Population using safely sanitation</h5>
-        <span id="san"></span>
-        <button class="graph-btn" data-statistic="Sanitation">Show Graph</button>
-        <canvas id="sanitationChart" width="300" height="200"></canvas>
-      </div>
-    
-      <!-- Add other cards similarly -->
-    
-      <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #90EE90; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-        <h5 style="color: white;">Step Counter</h5>
-        <span id="step"></span>
-        <button class="graph-btn" data-statistic="Step Counter">Show Graph</button>
-        <canvas id="stepChart" width="300" height="200"></canvas>
-      </div>
-    
       <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #FFD700; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
         <h5 style="color: white;">Heart Rate Monitor</h5>
         <span id="heart"></span>
@@ -200,20 +186,8 @@
         <canvas id="heartChart" width="300" height="200"></canvas>
       </div>
     
-      <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #FF7F50; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-        <h5 style="color: white;">Blood Pressure Monitor</h5>
-        <span id="blood"></span>
-        <button class="graph-btn" data-statistic="Blood Pressure">Show Graph</button>
-        <canvas id="bloodChart" width="300" height="200"></canvas>
-      </div>
-    
-      <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #ADD8E6; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
-        <h5 style="color: white;">Sleep Tracker</h5>
-        <span id="sleep"></span>
-        <button class="graph-btn" data-statistic="Sleep Tracker">Show Graph</button>
-        <canvas id="sleepChart" width="300" height="200"></canvas>
-      </div>
-    
+     
+
       <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #FF69B4; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
         <h5 style="color: white;">Calories Burned</h5>
         <span id="calories"></span>
@@ -221,12 +195,37 @@
         <canvas id="caloriesChart" width="300" height="200"></canvas>
       </div>
     
+    
+      <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #90EE90; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h5 style="color: white;">Step Counter</h5>
+        <span id="step"></span>
+        <button class="graph-btn" data-statistic="Step Counter">Show Graph</button>
+        <canvas id="stepChart" width="300" height="200"></canvas>
+      </div>
       <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #20B2AA; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
         <h5 style="color: white;">Water Intake</h5>
         <span id="water"></span>
         <button class="graph-btn" data-statistic="Water Intake">Show Graph</button>
         <canvas id="waterChart" width="300" height="200"></canvas>
       </div>
+    
+      
+      <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #ADD8E6; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h5 style="color: white;">Sleep Tracker</h5>
+        <span id="sleep"></span>
+        <button class="graph-btn" data-statistic="Sleep Tracker">Show Graph</button>
+        <canvas id="sleepChart" width="300" height="200"></canvas>
+      </div>
+    
+    
+      
+      <div class="card" style="display: inline-block; width: 300px; margin: 10px; padding: 10px; background-color: #FF6347; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h5 style="color: white;">Population using safely sanitation</h5>
+        <span id="san"></span>
+        <button class="graph-btn" data-statistic="Sanitation">Show Graph</button>
+        <canvas id="sanitationChart" width="300" height="200"></canvas>
+      </div>
+    
     </div>
     
     <script>
