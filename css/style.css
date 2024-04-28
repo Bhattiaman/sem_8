@@ -145,7 +145,8 @@ header.sticky{
 }
 
 .home{
-    background:url("https://images.pexels.com/photos/2383010/pexels-photo-2383010.jpeg?auto=compress&cs=tinysrgb&w=600") no-repeat;
+    /* background:url("https://images.pexels.com/photos/2383010/pexels-photo-2383010.jpeg?auto=compress&cs=tinysrgb&w=600") no-repeat; */
+    background: url(../images/pexels-shvetsa-3845129.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -311,7 +312,7 @@ header.sticky{
 }
 
 .doctor{
-    background:url(../images/background-img.jpg) no-repeat;
+    background:url(../images/home-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -410,7 +411,7 @@ header.sticky{
 }
 
 .footer{
-    background:url(../images/background-img.jpg) no-repeat;
+    background:url(../images/back-h2.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
