@@ -1,3 +1,12 @@
+### SELF HEALTH
+
+Github Link : https://github.com/15-Ab/Self_Health
+
+## Links to presentation and video pitch :
+
+Presentation : https://docs.google.com/presentation/d/1ReU1ic1WWjGBbUy8-8ipD3C_KAAK-htZ/edit?usp=share_link&ouid=112319944685125113783&rtpof=true&sd=true
+
+Video Pitch : https://drive.google.com/file/d/1KYBn7HtZEh3w0Z-Zhc-wfKMyiNFzkZz6/view?usp=share_link
 
 ## Setup Instructions Needed
 
